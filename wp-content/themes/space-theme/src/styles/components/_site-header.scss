@@ -87,7 +87,7 @@
 	@include mq(medium) {
 		margin-bottom: 0;
 		padding-top: 2rem;
-	padding-bottom: 2rem;
+		padding-bottom: 2rem;
 	}
 	@media only screen and (min-width: 1044px) {
 		padding-top: 2rem;
@@ -209,6 +209,9 @@
 			a {
 				border: 1px solid var(--color-secondary);
 				padding: 1rem;
+				&:hover {
+					border: 1px solid var(--color-text-base);
+				}
 			}
 		}
 	}

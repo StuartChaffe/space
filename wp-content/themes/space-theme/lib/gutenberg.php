@@ -78,7 +78,7 @@ function space_allowed_block_types( $allowed_blocks ) {
 		// 'acf/custom-block-space-1',
 		// 'acf/custom-block-space-2',
 		// 'acf/custom-block-space-3',
-		// 'acf/custom-block-space-4',
+		'acf/custom-block-space-4',
 		'acf/custom-block-space-5',
 		// 'acf/custom-block-space-6',
 		// 'acf/custom-block-space-7',
