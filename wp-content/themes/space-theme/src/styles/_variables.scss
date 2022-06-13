@@ -1,21 +1,11 @@
 :root {
-	--body-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--display-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--body-family: arboria, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--display-family: arboria, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-	--font-size: calc(1rem + 0.15vw);
-	--font-size-lead: calc(1.2rem + 0.1vw);
-	--font-size-small: calc(0.9rem + 0.1vw);
-	--font-size-h1: calc(2rem + 0.2vw);
-	--font-size-h2: calc(1.8rem + 0.2vw);
-	--font-size-h3: calc(1.5rem + 0.2vw);
-	--font-size-h4: calc(1.3rem + 0.2vw);
-	--font-size-h5: calc(1.2rem + 0.2vw);
-
-	--font-weight-light: 100;
-	--font-weight-normal: 400;
-	--font-weight-bold: 700;
-	--font-weight-heavy: 900;
-	--font-weight-heavy: var(--font-weight-bold);
+	--font-weight-light: 400; // Book
+	--font-weight-normal: 500; // Medium
+	--font-weight-bold: 700; // Bold
+	--font-weight-heavy: 900; // Black
 
 	--line-height: 1.5;
 	--line-height-headings: 1.2;
@@ -24,13 +14,16 @@
 	--color-grey: #ddd;
 	--color-grey-light: #efefef;
 
-	--color-primary: #59BACC;
-	--color-secondary: #58AD69;
-	--color-tertiary: #FFBC49;
+	--color-primary: #111A28;
+	--color-primary-light: #1F2B3C;
+	--color-secondary: #00B1A7;
+	--color-secondary-dark: #334B49;
+	--color-secondary-light: #96B1AD;
+	--color-tertiary: #9F507E;
 	--color-quaternary: #E2574C;
 
-	--color-text-base: #333;
-	--color-text-dark: #181822;
+	--color-text-base: #fff;
+	--color-text-dark: #333;
 	--color-text-reversed: #fff;
 	--color-text-link: #0087D0;
 	--color-text-hover: #003451;
@@ -41,7 +34,7 @@
 	--color-youtube: #cc181e;
 	--color-linkedin: #0077B5;
 
-	--body-background-color: #fff;
+	--body-background-color: var(--color-primary);
 
 	--border-radius: 16px;
 
@@ -52,13 +45,35 @@
 	--spacing-s: 0.5em;
 	--spacing-xs: 0.25em;
 
-	--container-width: 75rem;
-	--container-width-l: 100rem;
-	--content-width: 50rem;
+	--container-s: 800px;
+	--container: 1200px;
+	--container-l: 1430px;
+	--content-width: var(--container);
+	--container-global: 1800px;
+
+
+	--font-size: 16px;
+	--font-size-lead: calc(1.2rem + 0.1vw);
+	--font-size-small: calc(0.9rem + 0.1vw);
+	--font-size-h1: calc(2rem + 0.2vw);
+	--font-size-h2: calc(1.8rem + 0.2vw);
+	--font-size-h3: calc(1.5rem + 0.2vw);
+	--font-size-h4: calc(1.3rem + 0.2vw);
+	--font-size-h5: calc(1.2rem + 0.2vw);
+
+	@include mq(medium) {
+		--font-size: calc(1rem + 0.15vw);
+		--font-size-h1: calc(3.2rem + 0.2vw);
+		--font-size-h2: calc(2.2rem + 0.2vw);
+		--font-size-h3: calc(1.6rem + 0.2vw);
+		--font-size-h4: calc(1.4rem + 0.2vw);
+		--font-size-h5: calc(1.2rem + 0.2vw);
+	}
+
 
 	@include mq(large) {
 		--font-size-h1: calc(3.2rem + 0.2vw);
-		--font-size-h2: calc(2rem + 0.2vw);
+		--font-size-h2: calc(2.2rem + 0.2vw);
 		--font-size-h3: calc(1.6rem + 0.2vw);
 		--font-size-h4: calc(1.4rem + 0.2vw);
 		--font-size-h5: calc(1.2rem + 0.2vw);

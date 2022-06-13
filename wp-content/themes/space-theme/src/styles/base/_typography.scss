@@ -44,13 +44,22 @@ a:hover {
 
 h1,
 h2,
+h3 {
+	text-transform: uppercase;
+}
+h1,
+h2,
 h3,
 h4,
 h5 {
 	margin: 0;
 	line-height: var(--line-height-headings);
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-heavy);
 	color: var(--heading-color);
+}
+h4,
+h5 {
+	font-weight: var(--font-weight-bold);
 }
 
 h1, .heading-1 { font-size: var(--font-size-h1); }

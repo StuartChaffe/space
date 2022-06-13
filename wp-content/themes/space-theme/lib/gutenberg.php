@@ -59,3 +59,48 @@ function origin_deregister_styles() {
 	}
 }
 // add_action( 'wp_enqueue_scripts', 'origin_deregister_styles', 100);
+
+
+// add_action( 'wp_enqueue_scripts', 'origin_deregister_styles', 100);
+function space_acf_block_render_callback( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+
+	if( file_exists( get_theme_file_path("/blocks/{$slug}.php") ) ) {
+		include( get_theme_file_path("/blocks/{$slug}.php") );
+	}
+}
+
+add_filter( 'allowed_block_types_all', 'space_allowed_block_types' );
+ 
+function space_allowed_block_types( $allowed_blocks ) {
+ 
+	return array(
+		// 'acf/custom-block-space-1',
+		// 'acf/custom-block-space-2',
+		// 'acf/custom-block-space-3',
+		// 'acf/custom-block-space-4',
+		'acf/custom-block-space-5',
+		// 'acf/custom-block-space-6',
+		// 'acf/custom-block-space-7',
+		// 'acf/custom-block-space-8',
+		// 'acf/custom-block-space-9',
+		// 'acf/custom-block-space-10',
+		// 'acf/custom-block-space-11',
+		// 'acf/custom-block-space-12',
+		// 'acf/custom-block-space-13',
+		// 'acf/custom-block-space-14',
+		// 'acf/custom-block-space-15',
+		// 'acf/custom-block-space-16',
+		// 'acf/custom-block-space-17',
+		// 'acf/custom-block-space-18',
+		// 'acf/custom-block-space-19',
+		// 'acf/custom-block-space-20',
+		// 'acf/custom-block-space-21',
+		
+		'core/paragraph',
+		'core/heading',
+		'core/list',
+		'core/image',
+	);
+ 
+}
