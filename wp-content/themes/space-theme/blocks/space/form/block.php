@@ -12,7 +12,7 @@ $bkg 				= get_field('bkg');
 $content			= get_field('form_content');
 $default_body		= get_field('form_content', 'options');
 ?>
-<section class="form-outer sp">
+<section class="form-outer sm--bottom" id="free-consultation">
 	<div class="form-block">
 		<div class="form-block__body">
 			<div class="form-block__body-content">
@@ -23,7 +23,7 @@ $default_body		= get_field('form_content', 'options');
 				<?php } ?>
 			</div>
 			<div class="form-block__body-form">
-				<?php echo do_shortcode('[gravityform id="1" title="false"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="100" title="Contact form 1"]'); ?>
 			</div>
 		</div>
 	</div>

@@ -38,18 +38,19 @@
 	}
 	&__body {
 		display: flex;
-		flex-direction: column;
-		background: white;
-		padding: var(--spacing-xs);
+		// padding: var(--spacing-xs);
 		@include mq(medium) {
 			flex-direction: row;
-			padding: var(--spacing-l);
+			// padding: var(--spacing-l);
 		}
 		&-content {
 			width: 100%;
 			@include mq(medium) {
 				width: 50%;
-				padding-right: 2rem;
+				padding-right: 10%;
+			}
+			p {
+				@extend .lead;
 			}
 		}
 		&-form {

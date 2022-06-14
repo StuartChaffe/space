@@ -15,3 +15,97 @@
 @import "../../blocks/*/*/*.scss";
 
 @import "utilities/helpers";
+
+
+.form-fields {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin: 0 auto;
+	@include mq(medium) {
+		margin: 0 auto;
+	}
+	&--half {
+		margin-bottom: 0.2rem;
+		width: 100%;
+		@include mq(medium) {
+			margin-bottom: 0.2rem;
+			width: 50%;
+			padding-left: 0.5rem;
+		}
+		&:first-child {
+			@include mq(medium) {
+				padding-left: 0;
+				padding-right: 0.5rem;
+			}
+		}
+	}
+	&--full {
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    select,
+    textarea {
+        padding: 1rem 1.5rem;
+        background-color: #263346;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: var(--body-family);
+        font-weight: var(--font-weight-light);
+        font-size: var(--font-size);
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 0.7rem;
+        color: var(--color-text-base);
+
+        .full-width {
+            width: 100%;
+        }
+    }
+
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    textarea:focus,
+    select:focus {
+        // border: 1px solid black;
+        outline: 0;
+    }
+
+    label {
+        display: none;
+        // margin: .5em 0;
+        color: black;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: inline;
+    }
+}

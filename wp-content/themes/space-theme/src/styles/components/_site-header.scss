@@ -1,14 +1,14 @@
 .site-header {
 	display: flex;
 	justify-content: space-between;
-	// position: sticky;
+	position: sticky;
 	width: 100%;
 	top: 0;
 	transition: all 0.2s ease-in-out;
 	z-index: 99;
 
 	&__up {
-		background-color: rgba(0,0,0,1);
+		background-color: rgba(0,0,0,0.8);
 	}
 	&__content {
 		height: 100%;
@@ -86,14 +86,9 @@
 	// padding-bottom: 1rem;
 	@include mq(medium) {
 		margin-bottom: 0;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
-	@media only screen and (min-width: 1044px) {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
-	
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}	
 }
 
 .site-header__logo {
