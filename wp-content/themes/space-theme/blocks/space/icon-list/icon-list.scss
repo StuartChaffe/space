@@ -1,9 +1,20 @@
+.icon-block {
+	@extend .container;
+	+ .icon-block,
+	+ .cta {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
 .icon-list {
 	// @extend .container;
 	display: flex;
 	flex-direction: column;
 	@include mq(medium) {
 		flex-direction: row;
+	}
+	&__title {
+		margin-bottom: var(--spacing);
 	}
 	&__item {
 		// background-color: var(--color-primary-light);

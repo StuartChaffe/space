@@ -12,7 +12,7 @@
 		background-color: var(--color-primary-light);
 		padding: var(--spacing-s);
 		@include mq(large) {
-			padding: var(--spacing-xxl);
+			padding: var(--spacing-s);
 		}
 
 		h2, h3, h4, h5 {

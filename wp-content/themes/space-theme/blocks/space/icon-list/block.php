@@ -12,11 +12,13 @@ $title	= get_field('links_title');
 $bkg	= get_field('links_background');
 
 ?>
-<section class="container">
+<section class="icon-block sp">
 	<?php if ($title) { ?>
+	<div class="icon-list__title">
 		<?php echo $title; ?>
+	</div>
 	<?php } ?>
-	<div class="icon-list sp">
+	<div class="icon-list">
 	
 	<?php if( have_rows('links') ) { ?>
 		<?php while( have_rows('links') ): the_row();
