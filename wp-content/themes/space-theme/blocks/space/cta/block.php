@@ -15,7 +15,7 @@ $content	= get_field('cta_content');
 	<div class="cta__content">
 		<?php echo $content['text']; ?>
 		<?php if ($content['link']) { ?>
-			<a class="btn btn--secondary btn--margin" href="<?php echo $content['link']['url']; ?>" target="<?php echo $content['link']['target']; ?>"><?php echo $content['link']['title']; ?></a>
+			<a class="btn" href="<?php echo $content['link']['url']; ?>" target="<?php echo $content['link']['target']; ?>"><?php echo $content['link']['title']; ?></a>
 		<?php } ?>
 	</div>
 </section>

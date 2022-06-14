@@ -127,6 +127,7 @@ body:before {
   --color-secondary-dark: #334B49;
   --color-secondary-light: #96B1AD;
   --color-tertiary: #9F507E;
+  --color-tertiary-light: #B56E98;
   --color-quaternary: #E2574C;
   --color-text-base: #fff;
   --color-text-dark: #333;
@@ -736,23 +737,57 @@ div[data-type="core/button"] div[data-block] {
   font-size: 16px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 .btn:hover, .btn:focus {
-  border-color: var(--color-text-base);
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
   outline: 0;
-  color: var(--color-text-base);
+  color: var(--color-primary);
   text-decoration: none;
   position: relative;
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-text-reversed);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  color: var(--color-primary);
 }
 .btn--primary:hover, .btn--primary:focus {
-  border-color: var(--color-primary);
+  border: 1px solid var(--color-secondary-light);
+  background-color: var(--color-secondary-light);
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   color: var(--color-primary);
+}
+.btn--secondary:hover, .btn--secondary:focus {
+  border: 1px solid var(--color-secondary-light);
+  background-color: var(--color-secondary-light);
+}
+
+.btn--secondary-light {
+  background-color: var(--color-secondary-dark);
+  border: 1px solid var(--color-secondary-dark);
+  color: var(--color-text-base);
+}
+.btn--secondary-light:hover, .btn--secondary-light:focus {
+  border: 1px solid var(--color-secondary-light);
+  background-color: var(--color-secondary-light);
+  color: var(--color-text-base);
+}
+
+.btn--tertiary {
+  background-color: var(--color-tertiary);
+  border: 1px solid var(--color-tertiary);
+  color: var(--color-text-base);
+}
+.btn--tertiary:hover, .btn--tertiary:focus {
+  border: 1px solid var(--color-tertiary-light);
+  background-color: var(--color-tertiary-light);
+  color: var(--color-text-base);
 }
 
 .accordion {
