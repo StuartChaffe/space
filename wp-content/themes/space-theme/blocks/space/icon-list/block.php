@@ -12,7 +12,7 @@ $title	= get_field('links_title');
 $bkg	= get_field('links_background');
 
 ?>
-<section class="icon-block sp">
+<section class="icon-block sm--bottom">
 	<?php if ($title) { ?>
 	<div class="icon-list__title">
 		<?php echo $title; ?>

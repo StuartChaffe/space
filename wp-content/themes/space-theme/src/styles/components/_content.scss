@@ -1,17 +1,24 @@
 .content {
-	> * {
-		max-width: var(--content-width);
+	// > * {
+	// 	max-width: var(--content-width);
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// }
+	.btn {
 		margin-right: auto;
-		margin-left: auto;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
-	h2,
-	h3,
-	h4,
-	h5 {
-		margin-top: var(--spacing-l);
-		margin-bottom: 0;
-	}
+	// h2,
+	// h3,
+	// h4,
+	// h5 {
+	// 	margin-top: var(--spacing-l);
+	// 	margin-bottom: 0;
+	// }
 
 	a {
 		color: var(--link-color);

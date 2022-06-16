@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
-<link rel="stylesheet" href="https://use.typekit.net/dqi1gqy.css">
+<link rel="stylesheet" href="https://use.typekit.net/gpf4nqx.css">
 <?php wp_head(); ?>
 <?php get_template_part('partials/global', 'analytics'); ?>
 </head>

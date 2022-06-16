@@ -1,14 +1,33 @@
 .site-header {
 	display: flex;
 	justify-content: space-between;
-	position: sticky;
+	position: relative;
 	width: 100%;
 	top: 0;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.4s ease-in-out;
 	z-index: 99;
+	@include mq(medium) {
+		position: sticky;
+	}	
+
+	&__down {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		@include mq(medium) {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}	
+	}
 
 	&__up {
 		background-color: rgba(0,0,0,0.8);
+
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		@include mq(medium) {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}	
 	}
 	&__content {
 		height: 100%;
@@ -81,13 +100,13 @@
 	align-items: center;
 	// margin-bottom: 1rem;
 	// align-items: baseline;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	// padding-top: 2rem;
+	// padding-bottom: 2rem;
 	// padding-bottom: 1rem;
 	@include mq(medium) {
 		margin-bottom: 0;
-		padding-top: 4rem;
-		padding-bottom: 4rem;
+		// padding-top: 4rem;
+		// padding-bottom: 4rem;
 	}	
 }
 

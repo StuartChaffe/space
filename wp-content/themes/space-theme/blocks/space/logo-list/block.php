@@ -11,13 +11,13 @@ Allow Multiple: true
 $title	= get_field('logos_title');
 
 ?>
-<section class="logo-block">
+<section class="logo-block sm--bottom">
 	<?php if ($title) { ?>
 	<div class="logo-list__title">
 		<?php echo $title; ?>
 	</div>
 	<?php } ?>
-	<div class="logo-list sm--bottom">
+	<div class="logo-list">
 	
 	<?php if( have_rows('logos') ) { ?>
 		<?php while( have_rows('logos') ): the_row();

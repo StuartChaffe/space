@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header site-header__down">
 	<div class="site-header__inner">
 		<div class="site-header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="Space logo" /></a></div>
 
