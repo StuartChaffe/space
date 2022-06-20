@@ -11,14 +11,14 @@
 .container,
 .container-s {
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 1rem;
 	width: 100%;
 	max-width: var(--container);
 	@include mq(medium) {
-		padding: 0 4em;
+		padding: 0 4rem;
 	}
 	@include mq(xlarge) {
-		padding: 0 1em;
+		padding: 0 1rem;
 	}
 }
 .container-s {

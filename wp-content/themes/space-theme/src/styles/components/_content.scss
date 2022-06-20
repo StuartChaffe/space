@@ -1,3 +1,15 @@
+#content {
+	> h1,
+	> h2,
+	> h3,
+	> h4,
+	> h5 {
+		@extend .container;
+		// max-width: var(--content-width);
+		// margin-right: auto;
+		// margin-left: auto;
+	}
+}
 .content {
 	// > * {
 	// 	max-width: var(--content-width);
@@ -12,13 +24,17 @@
 		}
 	}
 
-	// h2,
-	// h3,
-	// h4,
-	// h5 {
-	// 	margin-top: var(--spacing-l);
-	// 	margin-bottom: 0;
-	// }
+	h2,
+	h3,
+	h4,
+	h5 {
+		// margin-top: var(--spacing-l);
+		// margin-bottom: 0;
+
+		// max-width: var(--content-width);
+		// margin-right: auto;
+		// margin-left: auto;
+	}
 
 	a {
 		color: var(--link-color);

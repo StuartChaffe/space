@@ -12,6 +12,7 @@ Allow Multiple: true
 $banner_type	= get_field('banner_type');
 $image 			= get_field('banner_image');
 $video 			= get_field( 'banner_video');
+$vimeovideo 	= get_field( 'banner_video_vimeo');
 $poster 		= get_field( 'banner_video_poster');
 // $large 		= get_field('banner_image');
 $content		= get_field('banner_content');
@@ -26,14 +27,17 @@ $overlay 		= get_field('banner_overlay');
 	</div>
 <?php } ?>
 
+<?php if ( $vimeovideo && $banner_type == 'Video' ) { ?>
+
 	<!-- Alternative Vimeo iframe for autoplay -->
 	<div class="video-embed" style="display: none">
 		<iframe title="Video title" src="https://player.vimeo.com/video/160583881?h=bf08ea74fa&&autoplay=1&dnt=1&app_id=122963" width="100%" height="auto" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" controls></iframe>
 	</div>
 	<!-- Using Vimeo iframe for autoplay -->
 	<div class="vimeo-wrapper">
-	<iframe src="https://player.vimeo.com/video/43874785?background=1&muted=0&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=1&muted=0&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
+<?php } ?>
 
 	<div class="banner__content">
 		<?php if ( $title ) { ?><h1><?php echo $title; ?></h1><?php } ?>
