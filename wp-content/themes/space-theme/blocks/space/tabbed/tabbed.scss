@@ -164,6 +164,7 @@ $border__radius: 20px;
 .tabbed--item {
 	background: rgb(31,43,60);
 	background: linear-gradient(90deg, rgba(31,43,60,1) 0%, rgba(17,26,40,1) 100%);
+	position: relative;
 	
 	@include mq(medium) {
 		border-bottom-left-radius: $border__radius;
@@ -171,14 +172,17 @@ $border__radius: 20px;
 	}
 	overflow: hidden;
 	&::before {
+		padding: 1rem;
 		position: relative;
 		content: attr(data-title);
 		cursor: pointer;
 		z-index: 1;
-		background:  var(--color-primary);
-		border: 1px solid var(--color-primary-light);
+		margin-bottom: 0.5rem;
+		background:  var(--color-primary-light);
+		border: 1px solid var(--color-secondary);
 		border-radius: 0;
-		color: #fff;
+		font-weight: var(--font-weight-bold);
+		color: var(--color-secondary);
 		display: block;
 		border-radius: 0;
 	}
@@ -187,8 +191,19 @@ $border__radius: 20px;
 	&:focus {
 		outline: none;
 		&::before {
-			background: red;
+			background:  var(--color-secondary);
+			color: white;
 		}
+	}
+
+	&::after {
+		content: url('../../src/images/arrow-small-down.svg');
+		width: 26px;
+		// height: 12px;	
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		z-index: 1;
 	}
 
 	&.is-active {
@@ -200,12 +215,17 @@ $border__radius: 20px;
 		}
 
 		&::before {
-			background: red;
+			background: transparent;
+			border-color:  var(--color-primary-light);
+			color: white;
+		}
+		&::after {
+			display: none;
 		}
 		&:hover,
 		&:focus {
 			&::before {
-				background: red;
+				background:  var(--color-primary-light);
 			}
 		}
 	}
@@ -215,11 +235,12 @@ $border__radius: 20px;
 		order: 2;
 		flex-direction: column;
 		width: 100%;
-		padding: 3rem 2rem 3rem 3rem;
+		padding: 0rem 2rem 3rem 3rem;
 		@include mq(medium) {
 			order: 1;
 			flex-direction: column;
 			width: 40%;
+			padding: 3rem 2rem 3rem 3rem;
 		}
 	}
 

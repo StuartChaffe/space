@@ -66,7 +66,7 @@
         const clickedTab = container.querySelector('[aria-controls="' + clickedId + '"]');
         clickedTab.click();
         //  document.getElementById(clickedId).scrollIntoView({
-          document.getElementById(clickedId)({
+          document.getElementById(clickedId).scrollIntoView({
           behavior: 'smooth'
         });
       }
