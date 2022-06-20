@@ -1,0 +1,183 @@
+.banner {
+	min-height: calc(100vh + 0px);
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	// background-color: var(--color-grey-dark);
+	display: flex;
+	padding-top: var(--spacing-xxl);
+	overflow: hidden;
+	margin-bottom: var(--spacing);
+	@include mq($until: medium) {
+		background-image: none !important;
+	}
+	@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) {
+		min-height: calc(100vh + 30px);
+	}
+
+	&__content {
+		@extend .container;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			margin-bottom: var(--spacing-s);
+			@include mq(xlarge) {
+				max-width: 90%;
+			}
+		}
+		&--small {
+			h1 {
+				font-size:  var(--font-size-h1-small);
+			}
+		}
+		.btn {
+			// margin-top: 2rem;
+			border-color: white;
+			color: white;
+			&:hover {
+				border-color: var(--color-primary);
+			}
+		}
+	}
+	&__text {
+		margin-top: auto;
+		width: 100%;
+		border-top: 2px solid white;
+		padding: var(--spacing-xs) 10% var(--spacing-xs) 0;
+		@include mq(medium) {
+			padding: var(--spacing-s) 20% var(--spacing-s) 0;
+		}
+	}
+	&--notext {
+		padding-top: var(--spacing-xxl);
+		padding-bottom: var(--spacing-xxl);
+		// align-items: center;
+	}
+
+	&__image {
+		position: absolute;
+		z-index: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: none;
+		min-width: calc(100% + 2px);
+		min-height: calc(100% + 2px);
+		display: block;
+		@include mq(medium) {
+			display: none;
+		}
+	}
+
+
+	&--video {
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 85vh;
+		background-size: cover;
+		background-position: center;
+		background: black;
+		@include mq(medium) {
+			height: 100%;
+			// transform: scale(1.1);
+		}
+		video {
+			min-width: 100%;
+			min-height: 100%;
+			max-width: none;
+			min-height: 85vh;
+			position: absolute !important;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			@include mq($until: medium) {
+				// width: 100%;
+				// top: 35vh;
+			}
+		}
+	}
+
+
+
+	// &::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	right: 0;
+	// 	background: var(--color-primary);
+	// 	background: linear-gradient(90deg, rgba(18,18,18,0.8) 50%, rgba(219,37,28,1) 100%);
+	// 	opacity: .7;
+	// }
+	&__overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		// background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 70%);
+		opacity: 1;
+		z-index: -1;
+		
+		// &::after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 80%;
+		// 	top: 0;
+		// 	right: 0;
+		// 	background: black;
+		// 	background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 100%);
+		// 	opacity: .5;
+		// }
+	}
+}
+.video-embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	// pointer-events: none;
+	overflow: hidden;
+
+	iframe {
+		min-width: 100vw;
+		// height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+		min-height: 100vh;
+		// min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.vimeo-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	overflow: hidden;
+ }
+ .vimeo-wrapper iframe {
+	width: 100vw;
+	height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+	min-height: 100vh;
+	min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+ }
