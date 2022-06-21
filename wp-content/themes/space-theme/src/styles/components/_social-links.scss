@@ -4,9 +4,29 @@
 }
 
 .social-links__item {
-	margin: 0 1rem;
+	margin: 0 0.5rem;
+	a {
+		color:  var(--color-secondary);
+	}
 }
 
 .social-links__link {
-	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-primary-light);
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	&:hover {
+		background-color: var(--color-secondary-dark);
+	}
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
+	.icon-facebook {
+		width: 28px;
+		height: 28px;
+	}
 }
