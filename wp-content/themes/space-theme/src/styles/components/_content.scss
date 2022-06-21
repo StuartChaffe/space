@@ -1,15 +1,3 @@
-#content {
-	> h1,
-	> h2,
-	> h3,
-	> h4,
-	> h5 {
-		@extend .container;
-		// max-width: var(--content-width);
-		// margin-right: auto;
-		// margin-left: auto;
-	}
-}
 .content {
 	// > * {
 	// 	max-width: var(--content-width);

@@ -26,8 +26,8 @@
 	--color-text-base: #fff;
 	--color-text-dark: #333;
 	--color-text-reversed: #fff;
-	--color-text-link: #0087D0;
-	--color-text-hover: #003451;
+	--color-text-link: var(--color-secondary-light);
+	--color-text-hover: var(--color-secondary);
 
 	--color-facebook: #3B5998;
 	--color-twitter: #1DA1F2;

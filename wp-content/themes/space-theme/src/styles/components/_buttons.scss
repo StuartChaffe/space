@@ -1,7 +1,7 @@
 .btn,
 .wpcf7-submit,
 .input.wpcf7-submit {
-	display: flex;
+	// display: flex;
 	white-space: nowrap;
 	border-radius: 0;
 	padding: 1rem 1.5rem;
@@ -22,8 +22,27 @@
 		text-decoration: none;
 		position: relative;
 	}
+	a {
+		color: var(--color-secondary);
+		text-decoration: none;
+		&:hover, &:focus {
+			color: var(--color-primary);
+			text-decoration: none;
+		}
+	}
+	+ .btn {
+		margin-left: 0.5rem;
+	}
 }
 
+
+span.btn {
+	padding: 0;
+	display: inline-flex;
+	a {
+		padding: 1rem 1.5rem;
+	}
+}
 .btn--primary,
 .wpcf7-submit,
 .input.wpcf7-submit {
@@ -47,6 +66,12 @@
 		background-color: var(--color-secondary-light);
 	}
 }
+span.btn--secondary {
+	a {
+		color: var(--color-primary);
+	}
+}
+
 .btn--secondary-light {
 	background-color: var(--color-secondary-light);
 	border: 1px solid var(--color-secondary-light);

@@ -132,8 +132,8 @@ body:before {
   --color-text-base: #fff;
   --color-text-dark: #333;
   --color-text-reversed: #fff;
-  --color-text-link: #0087D0;
-  --color-text-hover: #003451;
+  --color-text-link: var(--color-secondary-light);
+  --color-text-hover: var(--color-secondary);
   --color-facebook: #3B5998;
   --color-twitter: #1DA1F2;
   --color-instagram: #262626;
@@ -271,12 +271,19 @@ select {
 }
 
 p {
-  margin-top: var(--spacing-xs);
+  margin-top: 0;
+  margin-bottom: var(--spacing-xs);
+}
+p:last-of-type {
   margin-bottom: 0;
 }
 
 p.lead, .form-block__body-content p {
   font-size: var(--font-size-lead);
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
 }
 
 ul,
@@ -306,7 +313,7 @@ blockquote {
 
 a {
   color: var(--color-text-link);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -326,6 +333,7 @@ h3,
 h4,
 h5 {
   margin: 0;
+  margin-bottom: var(--spacing-xs);
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-heavy);
   color: var(--heading-color);
@@ -472,11 +480,7 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .banner__content, .two-col__video, .two-col, #content > h1,
-#content > h2,
-#content > h3,
-#content > h4,
-#content > h5, .main,
+.container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
   margin: 0 auto;
   padding: 0 1rem;
@@ -484,21 +488,13 @@ div[data-type="core/button"] div[data-block] {
   max-width: var(--container);
 }
 @media (min-width: 50em) {
-  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .banner__content, .two-col__video, .two-col, #content > h1,
-#content > h2,
-#content > h3,
-#content > h4,
-#content > h5, .main,
+  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
     padding: 0 4rem;
   }
 }
 @media (min-width: 80em) {
-  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .banner__content, .two-col__video, .two-col, #content > h1,
-#content > h2,
-#content > h3,
-#content > h4,
-#content > h5, .main,
+  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
     padding: 0 1rem;
   }
@@ -736,7 +732,6 @@ div[data-type="core/button"] div[data-block] {
 .btn,
 .wpcf7-submit,
 .input.wpcf7-submit {
-  display: flex;
   white-space: nowrap;
   border-radius: 0;
   padding: 1rem 1.5rem;
@@ -760,6 +755,33 @@ div[data-type="core/button"] div[data-block] {
   color: var(--color-primary);
   text-decoration: none;
   position: relative;
+}
+.btn a,
+.wpcf7-submit a,
+.input.wpcf7-submit a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+.btn a:hover, .btn a:focus,
+.wpcf7-submit a:hover,
+.wpcf7-submit a:focus,
+.input.wpcf7-submit a:hover,
+.input.wpcf7-submit a:focus {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.btn + .btn,
+.wpcf7-submit + .btn,
+.input.wpcf7-submit + .btn {
+  margin-left: 0.5rem;
+}
+
+span.btn {
+  padding: 0;
+  display: inline-flex;
+}
+span.btn a {
+  padding: 1rem 1.5rem;
 }
 
 .btn--primary,
@@ -786,6 +808,10 @@ div[data-type="core/button"] div[data-block] {
 .btn--secondary:hover, .btn--secondary:focus {
   border: 1px solid var(--color-secondary-light);
   background-color: var(--color-secondary-light);
+}
+
+span.btn--secondary a {
+  color: var(--color-primary);
 }
 
 .btn--secondary-light {
@@ -1114,6 +1140,24 @@ div[data-type="core/button"] div[data-block] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.content-block {
+  padding-top: var(--spacing);
+}
+.content-block--video {
+  margin-top: var(--spacing-xs);
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.content-block iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 49.99em) {

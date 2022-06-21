@@ -94,7 +94,7 @@ function space_allowed_block_types( $allowed_blocks ) {
 		// 'acf/custom-block-space-17',
 		// 'acf/custom-block-space-18',
 		// 'acf/custom-block-space-19',
-		// 'acf/custom-block-space-20',
+		'acf/custom-block-space-20',
 		// 'acf/custom-block-space-21',
 		'acf/custom-block-space-22',
 		'acf/custom-block-space-23',
