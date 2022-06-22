@@ -1,12 +1,17 @@
 .social-links {
 	display: flex;
 	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 .social-links__item {
 	margin: 0 0.5rem;
 	a {
 		color:  var(--color-secondary);
+	}
+	&:first-child {
+		margin-left: 0;
 	}
 }
 

@@ -789,7 +789,7 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .site-footer__inner, .main,
+.container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
   margin: 0 auto;
   padding: 0 1rem;
@@ -797,13 +797,13 @@ div[data-type="core/button"] div[data-block] {
   max-width: var(--container);
 }
 @media (min-width: 50em) {
-  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .site-footer__inner, .main,
+  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
     padding: 0 4rem;
   }
 }
 @media (min-width: 80em) {
-  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .site-footer__inner, .main,
+  .container, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
     padding: 0 1rem;
   }
@@ -1052,6 +1052,7 @@ div[data-type="core/button"] div[data-block] {
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  text-decoration: none;
 }
 .btn:hover, .site-header .menu li:last-child a:hover, .btn:focus, .site-header .menu li:last-child a:focus,
 .wpcf7-submit:hover,
@@ -1620,7 +1621,7 @@ span.btn--secondary a {
 .site-footer {
   margin-top: auto;
   text-align: center;
-  padding: var(--spacing);
+  padding: 0 4rem;
   color: var(--color-secondary);
 }
 .site-footer p, .site-footer a {
@@ -1629,6 +1630,21 @@ span.btn--secondary a {
 .site-footer__top, .site-footer__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.site-footer__bottom {
+  margin-top: 4rem;
+}
+
+.site-footer__logo {
+  font-size: 2rem;
+  margin: 0;
+  width: 123px;
+}
+@media (min-width: 50em) {
+  .site-footer__logo {
+    width: 180px;
+  }
 }
 
 .site-footer__inner .site-footer__logo {
@@ -1653,7 +1669,7 @@ span.btn--secondary a {
   margin-right: 0;
 }
 .site-footer__nav .menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
 }
 
@@ -1761,6 +1777,8 @@ body.nav-open {
 .social-links {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .social-links__item {
@@ -1768,6 +1786,9 @@ body.nav-open {
 }
 .social-links__item a {
   color: var(--color-secondary);
+}
+.social-links__item:first-child {
+  margin-left: 0;
 }
 
 .social-links__link {
@@ -2345,6 +2366,7 @@ body.nav-open {
 }
 .tabbed--buttons .tab {
   display: flex;
+  justify-content: center;
   padding: 1rem 1rem;
   background: transparent;
   color: var(--color-secondary);

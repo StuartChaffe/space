@@ -26,7 +26,7 @@
 			<?php endif; ?>
 			</ul>
 
-			<p><strong>&copy; <?php echo date('Y'); ?> Ignition UX. All Rights Reserved.</strong></p>
+			<p>&copy; <?php echo date('Y'); ?> Ignition UX. All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>

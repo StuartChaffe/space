@@ -743,6 +743,7 @@ div[data-type="core/button"] div[data-block] {
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  text-decoration: none;
 }
 .btn:hover, .btn:focus,
 .wpcf7-submit:hover,
@@ -1406,6 +1407,7 @@ span.btn--secondary a {
 }
 .tabbed--buttons .tab {
   display: flex;
+  justify-content: center;
   padding: 1rem 1rem;
   background: transparent;
   color: var(--color-secondary);
