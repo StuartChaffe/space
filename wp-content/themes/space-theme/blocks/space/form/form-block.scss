@@ -38,6 +38,7 @@
 	}
 	&__body {
 		display: flex;
+		flex-direction: column;
 		// padding: var(--spacing-xs);
 		@include mq(medium) {
 			flex-direction: row;
@@ -45,9 +46,11 @@
 		}
 		&-content {
 			width: 100%;
+			margin-bottom: 2rem;
 			@include mq(medium) {
 				width: 50%;
 				padding-right: 10%;
+				margin-bottom: 0;
 			}
 			p {
 				@extend .lead;
