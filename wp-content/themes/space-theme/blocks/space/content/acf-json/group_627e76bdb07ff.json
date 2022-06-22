@@ -1,6 +1,6 @@
 {
     "key": "group_627e76bdb07ff",
-    "title": "Content",
+    "title": "Content (+ video)",
     "fields": [
         {
             "key": "field_627e76c1d0a82",
@@ -25,8 +25,8 @@
             "key": "field_62b1af5a439fc",
             "label": "Video",
             "name": "content_video",
-            "type": "text",
-            "instructions": "Vimeo ID",
+            "type": "textarea",
+            "instructions": "Vimeo embed code (copy from Vimeo)",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -36,9 +36,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
         }
     ],
     "location": [
@@ -59,5 +59,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655811975
+    "modified": 1655889711
 }

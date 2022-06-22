@@ -7,3 +7,4 @@ import './components/toggle';
 import './components/accordion';
 import './components/menu';
 import './components/tabs';
+import './components/carousel';

@@ -1,0 +1,65 @@
+.testimonials {
+	&-block {
+		@extend .container;
+		text-align: center;
+		// padding: var(--spacing-l);
+	}
+	&--slider {
+		margin-top: var(--spacing);
+	}
+
+	&--item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0 var(--spacing-l);
+		@include mq(medium) {
+			padding: 0 var(--spacing-xxl);
+		}
+		&__quote {
+			margin-bottom: 2rem;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	// &--images {
+	// 	margin: var(--spacing-l) 0;
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	@include mq(medium) {
+	// 		flex-wrap: nowrap;
+	// 	}
+	// 	&-item {
+	// 		display: flex;
+	// 		align-items: center;
+	// 		justify-content: center;
+	// 		padding: 0 1rem;
+	// 		@include mq($until: medium) {
+	// 			&:nth-child(odd) {
+	// 				padding-left: 0;
+	// 			}
+	// 			&:nth-child(even) {
+	// 				padding-right: 0;
+	// 			}
+	// 		}
+	// 		@include mq(medium) {
+	// 			flex-grow: 1;
+	// 			&:first-child {
+	// 				padding-left: 0;
+	// 			}
+	// 			&:last-child {
+	// 				padding-right: 0;
+	// 			}
+	// 		}
+
+	// 		@include mq($until: medium) {
+	// 			width: 50%;
+	// 			padding: 0 2rem;
+	// 			margin-bottom: 2rem;
+	// 		}
+	// 	}
+	// }
+}

@@ -16,6 +16,10 @@
 
 @import "utilities/helpers";
 
+.testimonials--item:not(:first-child) {
+   display: none;
+}
+
 
 .form-fields {
 	display: flex;
