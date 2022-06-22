@@ -1989,19 +1989,17 @@ body.nav-open {
 }
 .slick-prev:before,
 .slick-next:before {
-  height: 28px;
-  width: 12px;
-}
-@media only screen and (min-width: 1330px) {
-  .slick-prev:before,
-.slick-next:before {
-    height: 36px;
-    width: 15px;
-  }
+  height: 36px;
+  width: 15px;
 }
 
 .slick-prev {
-  left: 0;
+  left: -35px;
+}
+@media (min-width: 50em) {
+  .slick-prev {
+    left: 0;
+  }
 }
 .slick-prev:before {
   margin-left: 0;
@@ -2014,7 +2012,12 @@ body.nav-open {
 }
 
 .slick-next {
-  right: 0;
+  right: -35px;
+}
+@media (min-width: 50em) {
+  .slick-next {
+    right: 0;
+  }
 }
 .slick-next:before {
   transition: 0.2s all ease-in-out;
@@ -2393,6 +2396,11 @@ body.nav-open {
 .content-block {
   padding-top: var(--spacing);
 }
+@media (max-width: 49.99em) {
+  .content-block br {
+    display: none;
+  }
+}
 .content-block--video {
   margin-top: var(--spacing-xs);
   position: relative;
@@ -2513,6 +2521,14 @@ body.nav-open {
   }
 }
 
+.icon-block {
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .icon-block {
+    text-align: left;
+  }
+}
 .icon-block + .icon-block,
 .icon-block + .cta {
   padding-top: 0;
@@ -2528,7 +2544,12 @@ body.nav-open {
   }
 }
 .icon-list__title {
-  margin-bottom: var(--spacing);
+  margin-bottom: 3rem;
+}
+@media (min-width: 50em) {
+  .icon-list__title {
+    margin-bottom: var(--spacing);
+  }
 }
 .icon-list__item {
   position: relative;
@@ -2536,7 +2557,7 @@ body.nav-open {
   width: 100%;
   text-decoration: none;
   color: var(--color-text-base);
-  margin: 0 0rem 1.5rem 0;
+  margin: 0 0rem 3rem 0;
   transition: transform 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
@@ -2569,7 +2590,11 @@ body.nav-open {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+@media (min-width: 50em) {
+  .icon-list__content {
+    align-items: flex-start;
+  }
 }
 .icon-list__content .btn, .icon-list__content .site-header .menu li:last-child a, .site-header .menu li:last-child .icon-list__content a {
   margin-top: auto;
@@ -2841,12 +2866,13 @@ body.nav-open {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  padding: 0 3rem 3rem 3rem;
+  margin-bottom: 3rem;
   order: 1;
 }
 @media (min-width: 50em) {
   .tabbed--item__image {
     width: 60%;
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -2891,7 +2917,7 @@ body.nav-open {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 var(--spacing-l);
+  padding: 0 var(--spacing-s);
 }
 @media (min-width: 50em) {
   .testimonials--item {
@@ -2903,6 +2929,11 @@ body.nav-open {
 }
 .testimonials--item p {
   margin-bottom: 0;
+}
+@media (max-width: 49.99em) {
+  .testimonials--item p {
+    font-size: 1rem;
+  }
 }
 
 .u-bold {

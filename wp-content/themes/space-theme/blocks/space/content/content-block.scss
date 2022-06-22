@@ -1,6 +1,11 @@
 .content-block {
 	@extend .container;
 	padding-top: var(--spacing);
+	@include mq($until: medium) {
+		br {
+			display: none;
+		}
+	}
 
 	&--video {
 		margin-top: var(--spacing-xs);

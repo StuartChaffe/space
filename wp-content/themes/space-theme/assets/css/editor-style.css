@@ -1150,6 +1150,11 @@ span.btn--secondary a {
 .content-block {
   padding-top: var(--spacing);
 }
+@media (max-width: 49.99em) {
+  .content-block br {
+    display: none;
+  }
+}
 .content-block--video {
   margin-top: var(--spacing-xs);
   position: relative;
@@ -1270,6 +1275,14 @@ span.btn--secondary a {
   }
 }
 
+.icon-block {
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .icon-block {
+    text-align: left;
+  }
+}
 .icon-block + .icon-block,
 .icon-block + .cta {
   padding-top: 0;
@@ -1285,7 +1298,12 @@ span.btn--secondary a {
   }
 }
 .icon-list__title {
-  margin-bottom: var(--spacing);
+  margin-bottom: 3rem;
+}
+@media (min-width: 50em) {
+  .icon-list__title {
+    margin-bottom: var(--spacing);
+  }
 }
 .icon-list__item {
   position: relative;
@@ -1293,7 +1311,7 @@ span.btn--secondary a {
   width: 100%;
   text-decoration: none;
   color: var(--color-text-base);
-  margin: 0 0rem 1.5rem 0;
+  margin: 0 0rem 3rem 0;
   transition: transform 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
@@ -1326,7 +1344,11 @@ span.btn--secondary a {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+@media (min-width: 50em) {
+  .icon-list__content {
+    align-items: flex-start;
+  }
 }
 .icon-list__content .btn {
   margin-top: auto;
@@ -1598,12 +1620,13 @@ span.btn--secondary a {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  padding: 0 3rem 3rem 3rem;
+  margin-bottom: 3rem;
   order: 1;
 }
 @media (min-width: 50em) {
   .tabbed--item__image {
     width: 60%;
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -1648,7 +1671,7 @@ span.btn--secondary a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 var(--spacing-l);
+  padding: 0 var(--spacing-s);
 }
 @media (min-width: 50em) {
   .testimonials--item {
@@ -1660,6 +1683,11 @@ span.btn--secondary a {
 }
 .testimonials--item p {
   margin-bottom: 0;
+}
+@media (max-width: 49.99em) {
+  .testimonials--item p {
+    font-size: 1rem;
+  }
 }
 
 .u-bold {
