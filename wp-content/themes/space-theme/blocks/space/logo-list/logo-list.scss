@@ -10,10 +10,6 @@
 	// @extend .container;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	@include mq(medium) {
-		flex-direction: row;
-	}
 	&__title {
 		margin-bottom: var(--spacing);
 	}
@@ -24,7 +20,7 @@
 		align-items: center;
 		justify-content: center;
 		border-radius: var(--border-radius);
-		width: 100%;
+		width: calc(100% / 3);
 		text-decoration: none;
 		color: var(--color-text-base);
 		padding: 2rem;
@@ -32,30 +28,12 @@
 		transition: transform .1s ease-in-out;
 		@include mq(medium) {
 			width: calc(100% / 4);
-			// margin: 0 2rem;
 		}
-
-		// &:first-of-type {
-		// 	@include mq(medium) {
-		// 		margin-left: 0;
-		// 	}
-		// }
-		// &:last-of-type {
-		// 	margin-bottom: 0;
-		// 	@include mq(medium) {
-		// 		margin-right: 0;
-		// 	}
-		// }
-
 	}
 	&__content {
 		height: 100%;
 		position: relative;
 		z-index: 1;
-		// padding: var(--spacing-s);
-		// p:last-of-type {
-		// 	margin-bottom: 1.5rem;
-		// }
 		.btn {
 			margin-top: auto;
 		}

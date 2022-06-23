@@ -483,7 +483,7 @@ div[data-type="core/button"] div[data-block] {
 .container, .testimonials-block, .tabbed, .logo-block, .icon-block, .form-block, .cta, .content-block, .banner__content, .two-col__video, .two-col, .main,
 .container-s {
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   width: 100%;
   max-width: var(--container);
 }
@@ -892,7 +892,11 @@ span.btn--secondary a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 4rem;
+}
+@media (min-width: 50em) {
+  .two-col__item--center {
+    padding-left: 4rem;
+  }
 }
 .two-col__item--center:first-of-type {
   padding-right: 0;
@@ -1146,6 +1150,11 @@ span.btn--secondary a {
 .content-block {
   padding-top: var(--spacing);
 }
+@media (max-width: 49.99em) {
+  .content-block br {
+    display: none;
+  }
+}
 .content-block--video {
   margin-top: var(--spacing-xs);
   position: relative;
@@ -1161,18 +1170,26 @@ span.btn--secondary a {
   height: 100%;
 }
 
-@media (max-width: 49.99em) {
-  .cta {
-    padding: 0;
-  }
-}
 .cta__content {
   display: flex;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
   background-color: var(--color-primary-light);
-  padding: var(--spacing-s);
+  padding: var(--spacing-s) var(--spacing-xs);
+}
+@media (max-width: 49.99em) {
+  .cta__content br {
+    display: none;
+  }
+}
+@media (min-width: 50em) {
+  .cta__content {
+    flex-direction: row;
+    padding: var(--spacing-s);
+  }
 }
 @media (min-width: 70em) {
   .cta__content {
@@ -1230,6 +1247,7 @@ span.btn--secondary a {
 }
 .form-block__body {
   display: flex;
+  flex-direction: column;
 }
 @media (min-width: 50em) {
   .form-block__body {
@@ -1238,11 +1256,13 @@ span.btn--secondary a {
 }
 .form-block__body-content {
   width: 100%;
+  margin-bottom: 2rem;
 }
 @media (min-width: 50em) {
   .form-block__body-content {
     width: 50%;
     padding-right: 10%;
+    margin-bottom: 0;
   }
 }
 .form-block__body-form {
@@ -1255,6 +1275,14 @@ span.btn--secondary a {
   }
 }
 
+.icon-block {
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .icon-block {
+    text-align: left;
+  }
+}
 .icon-block + .icon-block,
 .icon-block + .cta {
   padding-top: 0;
@@ -1270,7 +1298,12 @@ span.btn--secondary a {
   }
 }
 .icon-list__title {
-  margin-bottom: var(--spacing);
+  margin-bottom: 3rem;
+}
+@media (min-width: 50em) {
+  .icon-list__title {
+    margin-bottom: var(--spacing);
+  }
 }
 .icon-list__item {
   position: relative;
@@ -1278,7 +1311,7 @@ span.btn--secondary a {
   width: 100%;
   text-decoration: none;
   color: var(--color-text-base);
-  margin: 0 0rem 1.5rem 0;
+  margin: 0 0rem 3rem 0;
   transition: transform 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
@@ -1311,7 +1344,11 @@ span.btn--secondary a {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+@media (min-width: 50em) {
+  .icon-list__content {
+    align-items: flex-start;
+  }
 }
 .icon-list__content .btn {
   margin-top: auto;
@@ -1334,12 +1371,6 @@ span.btn--secondary a {
 .logo-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-@media (min-width: 50em) {
-  .logo-list {
-    flex-direction: row;
-  }
 }
 .logo-list__title {
   margin-bottom: var(--spacing);
@@ -1350,7 +1381,7 @@ span.btn--secondary a {
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
-  width: 100%;
+  width: 33.3333333333%;
   text-decoration: none;
   color: var(--color-text-base);
   padding: 2rem;
@@ -1589,12 +1620,13 @@ span.btn--secondary a {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  padding: 0 3rem 3rem 3rem;
+  margin-bottom: 3rem;
   order: 1;
 }
 @media (min-width: 50em) {
   .tabbed--item__image {
     width: 60%;
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -1639,7 +1671,7 @@ span.btn--secondary a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 var(--spacing-l);
+  padding: 0 var(--spacing-s);
 }
 @media (min-width: 50em) {
   .testimonials--item {
@@ -1651,6 +1683,11 @@ span.btn--secondary a {
 }
 .testimonials--item p {
   margin-bottom: 0;
+}
+@media (max-width: 49.99em) {
+  .testimonials--item p {
+    font-size: 1rem;
+  }
 }
 
 .u-bold {

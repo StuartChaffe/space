@@ -4,7 +4,9 @@ body.nav-open {
 
 
 .site-header--nav__mobile {
-	
+	.menu-primary-container {
+		height: 100%;
+	}
 }
 .site-header--nav__mobile.is-active {
 	transform: translateX(-100%);
@@ -38,7 +40,7 @@ body.nav-open {
 		&__mobile {
 			overflow: auto;
 			position: fixed;
-			padding: 50px 1rem;
+			padding: 50px 2rem;
 			right: -100%;
 			top: 0;
 			width: 100%;
@@ -53,6 +55,9 @@ body.nav-open {
 			ul {
 				padding-left: 0;
 				margin: 0;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
 				li {
 					width: 100%;
 					padding: 0;
@@ -60,13 +65,14 @@ body.nav-open {
 					a {
 						display: flex;
 						width: 100%;
-						border-bottom: 1px solid rgba(239, 239, 239, 0.3);
-						color: white;
-						padding: 0.5rem;
+						border-bottom: 2px solid rgba(239, 239, 239, 0.2);
+						color:  var(--color-secondary);
+						font-weight: var(--font-weight-bold);
+						padding: 1rem 0;
 						font-size: 1.2rem;
 						text-decoration: none;
 						&:hover {
-							color: var(--color-primary);
+							color: white;
 						}
 					}
 					.dropdown-button {

@@ -1,16 +1,23 @@
 .cta {
 	@extend .container;
-	@include mq($until: medium) {
-		padding: 0;
-		// margin-bottom: 0;
-	}
 	&__content {
 		display: flex;
 		align-items: center;
+		text-align: center;
+		flex-direction: column;
 		justify-content: space-between;
 		border-radius: 20px;
 		background-color: var(--color-primary-light);
-		padding: var(--spacing-s);
+		padding: var(--spacing-s) var(--spacing-xs);
+		@include mq($until: medium) {
+			br {
+				display: none;
+			}
+		}
+		@include mq(medium) {
+			flex-direction: row;
+			padding: var(--spacing-s);
+		}
 		@include mq(large) {
 			padding: var(--spacing-s);
 		}
