@@ -10,8 +10,9 @@ Allow Multiple: true
 */
 $content	= get_field('content');
 $video		= get_field('content_video');
+$size		= get_field('content_container');
 ?>
-<section class="content-block sm">
+<section class="content-block sm<?php if ($size == 'Small') { ?> content-block__small<?php } ?>">
 	<?php echo $content; ?>
 	<?php if ( $video ) { ?>
 	<div class="content-block--video">

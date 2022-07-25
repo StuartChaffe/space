@@ -7,6 +7,10 @@
 		}
 	}
 
+	&__small {
+		max-width: var(--container-s);
+	}
+
 	&--video {
 		margin-top: var(--spacing-xs);
 		position: relative;

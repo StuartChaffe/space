@@ -953,34 +953,45 @@ div[data-type="core/button"] div[data-block] {
   }
 }
 
-.content .btn, .content .site-header .menu li:last-child a, .site-header .menu li:last-child .content a {
+.content .btn, .content .site-header .menu li:last-child a, .site-header .menu li:last-child .content a,
+.content-block .btn,
+.content-block .site-header .menu li:last-child a,
+.site-header .menu li:last-child .content-block a {
   margin-right: auto;
   text-decoration: none;
 }
-.content .btn:hover, .content .site-header .menu li:last-child a:hover, .site-header .menu li:last-child .content a:hover {
+.content .btn:hover, .content .site-header .menu li:last-child a:hover, .site-header .menu li:last-child .content a:hover,
+.content-block .btn:hover,
+.content-block .site-header .menu li:last-child a:hover,
+.site-header .menu li:last-child .content-block a:hover {
   text-decoration: none;
 }
-.content a {
+.content a,
+.content-block a {
   color: var(--link-color);
   text-decoration: underline;
   -webkit-text-decoration-color: var(--link-hover-color);
           text-decoration-color: var(--link-hover-color);
 }
-.content a:hover {
+.content a:hover,
+.content-block a:hover {
   color: var(--link-hover-color);
   text-decoration: underline;
 }
-.content blockquote {
+.content blockquote,
+.content-block blockquote {
   max-width: none;
   font-size: var(--font-size-h3);
   line-height: 1.4;
   margin: var(--spacing-l) 0;
 }
-.content figure {
+.content figure,
+.content-block figure {
   max-width: none;
   margin: var(--spacing-xl) 0;
 }
-.content figcaption {
+.content figcaption,
+.content-block figcaption {
   padding: 1em 0;
   font-size: var(--font-size-xs);
   color: var(--color-text-dark);
@@ -989,12 +1000,14 @@ div[data-type="core/button"] div[data-block] {
   margin-left: auto;
   border-bottom: 1px solid var(--color-grey-light);
 }
-.content ul {
+.content ul,
+.content-block ul {
   list-style: disc;
   margin-top: 1.5em;
   padding-left: 1rem;
 }
-.content li {
+.content li,
+.content-block li {
   margin-bottom: 0.25em;
 }
 
@@ -2400,6 +2413,9 @@ body.nav-open {
   .content-block br {
     display: none;
   }
+}
+.content-block__small {
+  max-width: var(--container-s);
 }
 .content-block--video {
   margin-top: var(--spacing-xs);
