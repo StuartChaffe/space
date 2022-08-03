@@ -15,9 +15,9 @@ $tab3		= get_field('tab_3');
 ?>
 <section class="tabbed sm--bottom">
 	<div class="tabbed--buttons" role="tablist" aria-label="TabCordion">
-		<button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1">Strategic growth at pace</button>
-		<button class="tab" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1">Convert more, waste less</button>
-		<button class="tab" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1">Profit based modeling</button>
+		<button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1"><?php echo esc_html( $tab1['tab_title'] ); ?></button>
+		<button class="tab" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1"><?php echo esc_html( $tab2['tab_title'] ); ?></button>
+		<button class="tab" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1"><?php echo esc_html( $tab3['tab_title'] ); ?></button>
 	</div>
 	<div id="tab1-tab" class="tabbed--item is-active" data-title="<?php echo $tab1['tab_title']; ?>" tabindex="0" role="tabpanel" aria-labelledby="tab1">
 		<div class="tabbed--item-container">
