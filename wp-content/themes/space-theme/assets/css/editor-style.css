@@ -1405,6 +1405,9 @@ span.btn--secondary a {
     width: 25%;
   }
 }
+.logo-list__item img {
+  max-height: 120px;
+}
 .logo-list__content {
   height: 100%;
   position: relative;
