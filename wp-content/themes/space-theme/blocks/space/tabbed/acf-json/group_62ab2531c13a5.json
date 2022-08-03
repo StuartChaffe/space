@@ -3,6 +3,25 @@
     "title": "Tabbed",
     "fields": [
         {
+            "key": "field_62ea8180cae2a",
+            "label": "ID",
+            "name": "tabbed_id",
+            "type": "text",
+            "instructions": "Give each component on the page a unique ID for it to work.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62ab4e49f6ce4",
             "label": "Tab 1",
             "name": "tab_1",
@@ -303,5 +322,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655396821
+    "modified": 1659536106
 }
