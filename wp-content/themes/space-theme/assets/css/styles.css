@@ -2633,6 +2633,7 @@ body.nav-open {
 .logo-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .logo-list__title {
   margin-bottom: var(--spacing);
