@@ -24,11 +24,10 @@ $quotes = get_field( 'select-quote' );
 			$content = get_field('quote', $quote);
 			$author = get_field('quote_author', $quote);
 			$company = get_field('quote_company', $quote);
-			$test = get_field('test', $quote);
 		?>
 		<div class="quote--item">
 			<?php if ($title) { ?>
-				<p class="lead"><?php echo $test; ?><strong><?php echo $title; ?></strong></p>
+				<p class="lead mb-xs"><strong><?php echo $title; ?></strong></p>
 			<?php } ?>
 			<?php if ($content) { ?>
 			<div class="quote--item__quote">

@@ -3028,6 +3028,10 @@ body.nav-open {
   margin-bottom: var(--spacing-s) !important;
 }
 
+.mb-xs {
+  margin-bottom: var(--spacing-xs) !important;
+}
+
 img.alignright {
   float: right;
   margin: 0 0 1em 1em;
