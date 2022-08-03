@@ -171,9 +171,9 @@ function origin_cpts() {
 	// );
 	// register_post_type($post_type_name, $post_type_options);
 
-	$post_type_name		= "testimonials";
-	$single_name		= "Testimonial";
-	$plural_name		= "Testimonials";
+	$post_type_name		= "quotes";
+	$single_name		= "Quote";
+	$plural_name		= "Quotes";
 	$icon				= "dashicons-format-quote";
 	$gutenberg_enabled	= false;
 
@@ -217,5 +217,5 @@ function origin_cpts() {
 	        'parent'                => 'Parent '. $single_name
 	    ),
 	);
-	// register_post_type($post_type_name, $post_type_options);
+	register_post_type($post_type_name, $post_type_options);
 }

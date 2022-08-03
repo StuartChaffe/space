@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$(".testimonials--slider").slick({
+	$(".quote--slider").slick({
 		// settings: "unslick",
 		speed: 300,
 		slidesToShow: 1,
