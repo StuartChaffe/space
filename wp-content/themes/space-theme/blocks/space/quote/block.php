@@ -21,7 +21,7 @@ $quotes = get_field( 'select-quote' );
 		<?php foreach( $quotes as $quote): ?>
 		<?php
 			$title = get_field('quote_title', $quote);
-			$content = get_field('quote', $quote);
+			$content = get_field('quote', $quote, false, false);
 			$author = get_field('quote_author', $quote);
 			$company = get_field('quote_company', $quote);
 		?>
