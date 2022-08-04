@@ -2,6 +2,12 @@ table {
 	width: 100%;
 	border-collapse: collapse;
     border-spacing: 0;
+	+ p,
+	+ h2,
+	+ h3,
+	+ h4 {
+		margin-top: 1rem;
+	}
 }
 
 table th,
