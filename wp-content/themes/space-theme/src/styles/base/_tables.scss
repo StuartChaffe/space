@@ -22,7 +22,10 @@ table th {
 	text-align: center;
 	background-color: var(--color-tertiary);
 }
-
+table th {
+	// position: sticky;
+	// top: 200px;
+}
 table tr:last-child td {
 	// border-bottom: none;
 }

@@ -1663,6 +1663,9 @@ span.btn--secondary a {
     padding: 3rem 2rem 3rem 3rem;
   }
 }
+.tabbed--item__content .btn {
+  margin-top: 1rem;
+}
 .tabbed--item__image {
   width: 100%;
   display: flex;
