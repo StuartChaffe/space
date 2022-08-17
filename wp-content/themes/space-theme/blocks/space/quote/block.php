@@ -16,8 +16,7 @@ $quotes = get_field( 'select-quote' );
 		<h3><?php echo $title ?></h3>
 	<?php } ?>
 	<div class="quote--slider">
-	<?php
-	if( $quotes ): ?>
+	<?php if( $quotes ): ?>
 		<?php foreach( $quotes as $quote): ?>
 		<?php
 			$title = get_field('quote_title', $quote);

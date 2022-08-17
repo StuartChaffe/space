@@ -34,6 +34,9 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 .alignleft          { float: left; }
 .aligncenter        { display: block; margin-left: auto; margin-right: auto; }
 
+.f-col { flex-direction: column; }
+.f-row { flex-direction: row; }
+
 // Screen reader
 .sr-only {
 	position: absolute;
