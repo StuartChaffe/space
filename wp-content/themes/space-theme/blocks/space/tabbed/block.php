@@ -16,9 +16,9 @@ $tab3	= get_field('tab_3');
 
 <section class="tabbed sm--bottom">
 	<div class="tabbed--buttons" role="tablist" aria-label="TabCordion">
-		<button class="tab is-active" role="tab" aria-selected="true" aria-controls="<?php echo $block['id']; ?>-tab1-tab" id="<?php if ( $id ) { ?><?php echo $id ?>-<?php } ?>tab1"><?php echo esc_html( $tab1['tab_title'] ); ?></button>
-		<button class="tab" role="tab" aria-selected="false" aria-controls="<?php echo $block['id']; ?>-tab2-tab" id="<?php if ( $id ) { ?><?php echo $id ?>-<?php } ?>tab2" tabindex="-1"><?php echo esc_html( $tab2['tab_title'] ); ?></button>
-		<button class="tab" role="tab" aria-selected="false" aria-controls="<?php echo $block['id']; ?>-tab3-tab" id="<?php if ( $id ) { ?><?php echo $id ?>-<?php } ?>tab3" tabindex="-1"><?php echo esc_html( $tab3['tab_title'] ); ?></button>
+		<button class="tab <?php echo $tab1['tab_colour']; ?> is-active" role="tab" aria-selected="true" aria-controls="<?php echo $block['id']; ?>-tab1-tab" id="<?php if ( $id ) { ?><?php echo $id ?>-<?php } ?>tab1"><?php echo esc_html( $tab1['tab_title'] ); ?></button>
+		<button class="tab <?php echo $tab2['tab_colour']; ?>" role="tab" aria-selected="false" aria-controls="<?php echo $block['id']; ?>-tab2-tab" id="<?php if ( $id ) { ?><?php echo $id ?>-<?php } ?>tab2" tabindex="-1"><?php echo esc_html( $tab2['tab_title'] ); ?></button>
+		<button class="tab <?php echo $tab3['tab_colour']; ?>" role="tab" aria-selected="false" aria-controls="<?php echo $block['id']; ?>-tab3-tab" id="<?php if ( $id ) { ?><?php echo $id ?>-<?php } ?>tab3" tabindex="-1"><?php echo esc_html( $tab3['tab_title'] ); ?></button>
 	</div>
 	<div id="<?php echo $block['id']; ?>-tab1-tab" class="tabbed--item is-active" data-title="<?php echo $tab1['tab_title']; ?>" tabindex="0" role="tabpanel" aria-labelledby="tab1">
 		<div class="tabbed--item-container">

@@ -37,6 +37,33 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_62fcf4687c8f5",
+                    "label": "Tab colour",
+                    "name": "tab_colour",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "tab__tertiary": "Magenta",
+                        "tab__secondary": "Green",
+                        "tab__secondary-dark": "Dark Green",
+                        "tab__light": "Light Green"
+                    },
+                    "default_value": "tab__secondary",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
                     "key": "field_62ab4e68f6ce6",
                     "label": "Content",
                     "name": "tab_content",
@@ -155,6 +182,33 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_62fcfc580dc0c",
+                    "label": "Tab colour",
+                    "name": "tab_colour",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "tab__tertiary": "Magenta",
+                        "tab__secondary": "Green",
+                        "tab__secondary-dark": "Dark Green",
+                        "tab__light": "Light Green"
+                    },
+                    "default_value": "tab__secondary",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 },
                 {
                     "key": "field_62ab4f0d4ad0d",
@@ -277,6 +331,33 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_62fcfc7f0dc0d",
+                    "label": "Tab colour",
+                    "name": "tab_colour",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "tab__tertiary": "Magenta",
+                        "tab__secondary": "Green",
+                        "tab__secondary-dark": "Dark Green",
+                        "tab__light": "Light Green"
+                    },
+                    "default_value": "tab__secondary",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
                     "key": "field_62ab4f0e4ad12",
                     "label": "Content",
                     "name": "tab_content",
@@ -381,5 +462,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659538572
+    "modified": 1660750089
 }

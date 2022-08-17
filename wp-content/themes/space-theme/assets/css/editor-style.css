@@ -1528,13 +1528,65 @@ span.btn--secondary a {
 .tabbed--buttons .tab:last-of-type {
   margin-right: 0;
 }
-.tabbed--buttons .tab:hover, .tabbed--buttons .tab:focus {
-  outline: none;
-  border-top: 3px solid var(--color-secondary);
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__tertiary:hover, .tabbed--buttons .tab__tertiary:focus {
+    border-top: 3px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+  }
 }
-.tabbed--buttons .tab.is-active {
-  border-top: 3px solid var(--color-tertiary);
-  color: var(--color-tertiary);
+.tabbed--buttons .tab__tertiary.is-active:hover, .tabbed--buttons .tab__tertiary.is-active:focus {
+  background: transparent;
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__tertiary.is-active {
+    border-top: 3px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+  }
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__secondary:hover, .tabbed--buttons .tab__secondary:focus {
+    border-top: 3px solid var(--color-secondary);
+    color: var(--color-secondary);
+  }
+}
+.tabbed--buttons .tab__secondary.is-active:hover, .tabbed--buttons .tab__secondary.is-active:focus {
+  background: transparent;
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__secondary.is-active {
+    border-top: 3px solid var(--color-secondary);
+    color: var(--color-secondary);
+  }
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__secondary-dark:hover, .tabbed--buttons .tab__secondary-dark:focus {
+    border-top: 3px solid var(--color-secondary-dark);
+    color: var(--color-secondary-dark);
+  }
+}
+.tabbed--buttons .tab__secondary-dark.is-active:hover, .tabbed--buttons .tab__secondary-dark.is-active:focus {
+  background: transparent;
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__secondary-dark.is-active {
+    border-top: 3px solid var(--color-secondary-dark);
+    color: var(--color-secondary-dark);
+  }
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__light:hover, .tabbed--buttons .tab__light:focus {
+    border-top: 3px solid var(--color-secondary-light);
+    color: var(--color-secondary-light);
+  }
+}
+.tabbed--buttons .tab__light.is-active:hover, .tabbed--buttons .tab__light.is-active:focus {
+  background: transparent;
+}
+@media (min-width: 50em) {
+  .tabbed--buttons .tab__light.is-active {
+    border-top: 3px solid var(--color-secondary-light);
+    color: var(--color-secondary-light);
+  }
 }
 .tabbed--buttons .tab.is-active:hover, .tabbed--buttons .tab.is-active:focus {
   background: transparent;
@@ -1560,42 +1612,6 @@ span.btn--secondary a {
 }
 .tabbed--buttons .tab:last-of-type {
   margin-right: 0;
-}
-.tabbed--buttons .tab:hover, .tabbed--buttons .tab:focus {
-  outline: none;
-}
-@media (min-width: 50em) {
-  .tabbed--buttons .tab:hover:first-of-type, .tabbed--buttons .tab:focus:first-of-type {
-    margin-left: 0;
-    border-top: 3px solid var(--color-tertiary);
-    color: var(--color-tertiary);
-  }
-  .tabbed--buttons .tab:hover:nth-child(2), .tabbed--buttons .tab:focus:nth-child(2) {
-    border-top: 3px solid var(--color-secondary-light);
-    color: var(--color-secondary-light);
-  }
-  .tabbed--buttons .tab:hover:last-of-type, .tabbed--buttons .tab:focus:last-of-type {
-    margin-right: 0;
-    border-top: 3px solid var(--color-secondary-dark);
-    color: var(--color-secondary-dark);
-  }
-}
-.tabbed--buttons .tab.is-active:hover, .tabbed--buttons .tab.is-active:focus {
-  background: transparent;
-}
-@media (min-width: 50em) {
-  .tabbed--buttons .tab.is-active:first-of-type {
-    border-top: 3px solid var(--color-tertiary);
-    color: var(--color-tertiary);
-  }
-  .tabbed--buttons .tab.is-active:nth-child(2) {
-    border-top: 3px solid var(--color-secondary-light);
-    color: var(--color-secondary-light);
-  }
-  .tabbed--buttons .tab.is-active:last-of-type {
-    border-top: 3px solid var(--color-secondary-dark);
-    color: var(--color-secondary-dark);
-  }
 }
 
 .tabbed--item {
