@@ -30,17 +30,25 @@ $border__radius: 20px;
 	&-products {
 		width: 100%;
 		display: flex;
-		order: 1;
-		margin: 0 3rem 3rem 3rem;
+		flex-direction: column;
+		order: 2;
+		margin-bottom: 2rem;
+		@include mq(medium) {
+			margin: 0 3rem 3rem 3rem;
+			flex-direction: row;
+		}
 		&--item {
 			flex: 1 1 0px;
-			margin: 0 1rem;
+			margin: 1rem 3rem;
 			padding: 2rem;
-			&:first-child {
-				margin-left: 0;
-			}
-			&:last-child {
-				margin-right: 0;
+			@include mq(medium) {
+				margin: 1rem;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 		}
 	}

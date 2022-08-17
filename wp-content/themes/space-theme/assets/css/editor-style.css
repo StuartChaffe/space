@@ -1493,19 +1493,31 @@ span.btn--secondary a {
 .tabbed-products {
   width: 100%;
   display: flex;
-  order: 1;
-  margin: 0 3rem 3rem 3rem;
+  flex-direction: column;
+  order: 2;
+  margin-bottom: 2rem;
+}
+@media (min-width: 50em) {
+  .tabbed-products {
+    margin: 0 3rem 3rem 3rem;
+    flex-direction: row;
+  }
 }
 .tabbed-products--item {
   flex: 1 1 0px;
-  margin: 0 1rem;
+  margin: 1rem 3rem;
   padding: 2rem;
 }
-.tabbed-products--item:first-child {
-  margin-left: 0;
-}
-.tabbed-products--item:last-child {
-  margin-right: 0;
+@media (min-width: 50em) {
+  .tabbed-products--item {
+    margin: 1rem;
+  }
+  .tabbed-products--item:first-child {
+    margin-left: 0;
+  }
+  .tabbed-products--item:last-child {
+    margin-right: 0;
+  }
 }
 
 .tabbed--buttons {
