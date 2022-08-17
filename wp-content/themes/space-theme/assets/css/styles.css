@@ -2931,6 +2931,7 @@ body.nav-open {
   .tabbed--item__content {
     order: 1;
     flex-direction: column;
+    width: 40%;
     padding: 3rem 2rem 3rem 3rem;
   }
 }
