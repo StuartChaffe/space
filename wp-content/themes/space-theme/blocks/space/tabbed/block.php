@@ -26,7 +26,7 @@ $tab3	= get_field('tab_3');
 				<div class="tabbed--item__content content">
 					<?php echo $tab1['tab_content']; ?>
 
-					<a href="<?php echo esc_url( $tab1['tab_button']['url'] ); ?>" class="btn btn--tertiary"><?php echo esc_html( $tab1['tab_button']['title'] ); ?></a>
+					<?php if ( $tab1['tab_button'] ) { ?><a href="<?php echo esc_url( $tab1['tab_button']['url'] ); ?>" class="btn btn--tertiary"><?php echo esc_html( $tab1['tab_button']['title'] ); ?></a><?php } ?>
 				</div>
 				<?php if ( $tab1['tab_image'] ) { ?>
 				<div class="tabbed--item__image <?php echo $tab1['image_position']; ?>">
@@ -41,7 +41,7 @@ $tab3	= get_field('tab_3');
 			<div class="tabbed--item__inner">
 				<div class="tabbed--item__content content">
 					<?php echo $tab2['tab_content']; ?>
-					<a href="<?php echo esc_url( $tab2['tab_button']['url'] ); ?>" class="btn btn--secondary-light"><?php echo esc_html( $tab2['tab_button']['title'] ); ?></a>
+					<?php if ( $tab2['tab_button'] ) { ?><a href="<?php echo esc_url( $tab2['tab_button']['url'] ); ?>" class="btn btn--secondary-light"><?php echo esc_html( $tab2['tab_button']['title'] ); ?></a><?php } ?>
 				</div>
 				<?php if ( $tab2['tab_image'] ) { ?>
 				<div class="tabbed--item__image <?php echo $tab2['image_position']; ?>">
@@ -56,7 +56,7 @@ $tab3	= get_field('tab_3');
 			<div class="tabbed--item__inner">
 				<div class="tabbed--item__content content">
 					<?php echo $tab3['tab_content']; ?>
-					<a href="<?php echo esc_url( $tab3['tab_button']['url'] ); ?>" class="btn btn--secondary-dark"><?php echo esc_html( $tab3['tab_button']['title'] ); ?></a>
+					<?php if ( $tab3['tab_button'] ) { ?><a href="<?php echo esc_url( $tab3['tab_button']['url'] ); ?>" class="btn btn--secondary-dark"><?php echo esc_html( $tab3['tab_button']['title'] ); ?></a><?php } ?>
 				</div>
 				<?php if ( $tab3['tab_image'] ) { ?>
 				<div class="tabbed--item__image <?php echo $tab3['image_position']; ?>">
