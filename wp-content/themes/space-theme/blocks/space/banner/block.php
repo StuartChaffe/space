@@ -29,10 +29,7 @@ $overlay 		= get_field('banner_overlay');
 
 <?php if ( $vimeovideo && $banner_type == 'Video' ) { ?>
 
-	<!-- Alternative Vimeo iframe for autoplay -->
-	<div class="video-embed" style="display: none">
-		<iframe title="Video title" src="https://player.vimeo.com/video/160583881?h=bf08ea74fa&&autoplay=1&dnt=1&app_id=122963" width="100%" height="auto" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" controls></iframe>
-	</div>
+	
 	<!-- Using Vimeo iframe for autoplay -->
 	<div class="vimeo-wrapper">
 		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=1&muted=0&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
