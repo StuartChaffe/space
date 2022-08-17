@@ -24,11 +24,12 @@
 		width: calc(100% / 3);
 		text-decoration: none;
 		color: var(--color-text-base);
-		padding: 2rem;
+		padding: 1rem;
 		margin-bottom: 2rem;
 		transition: transform .1s ease-in-out;
 		@include mq(medium) {
 			width: calc(100% / 4);
+			padding: 2rem;
 		}
 
 		img {

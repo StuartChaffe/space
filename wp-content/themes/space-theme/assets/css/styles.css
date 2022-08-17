@@ -2653,13 +2653,14 @@ body.nav-open {
   width: 33.3333333333%;
   text-decoration: none;
   color: var(--color-text-base);
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   transition: transform 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
   .logo-list__item {
     width: 25%;
+    padding: 2rem;
   }
 }
 .logo-list__item img {

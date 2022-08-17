@@ -28,9 +28,11 @@ $tab3	= get_field('tab_3');
 
 					<a href="<?php echo esc_url( $tab1['tab_button']['url'] ); ?>" class="btn btn--tertiary"><?php echo esc_html( $tab1['tab_button']['title'] ); ?></a>
 				</div>
+				<?php if ( $tab1['tab_image'] ) { ?>
 				<div class="tabbed--item__image <?php echo $tab1['image_position']; ?>">
 					<img loading="lazy" class="<?php echo $tab1['image_position']; ?>" src="<?php echo esc_url( $tab1['tab_image']['url'] ); ?>" alt="<?php echo esc_attr( $tab1['tab_image']['alt'] ); ?>" />
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
@@ -41,9 +43,11 @@ $tab3	= get_field('tab_3');
 					<?php echo $tab2['tab_content']; ?>
 					<a href="<?php echo esc_url( $tab2['tab_button']['url'] ); ?>" class="btn btn--secondary-light"><?php echo esc_html( $tab2['tab_button']['title'] ); ?></a>
 				</div>
+				<?php if ( $tab2['tab_image'] ) { ?>
 				<div class="tabbed--item__image <?php echo $tab2['image_position']; ?>">
 					<img loading="lazy" class="<?php echo $tab2['image_position']; ?>" src="<?php echo esc_url( $tab2['tab_image']['url'] ); ?>" alt="<?php echo esc_attr( $tab2['tab_image']['alt'] ); ?>" />
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
@@ -54,9 +58,11 @@ $tab3	= get_field('tab_3');
 					<?php echo $tab3['tab_content']; ?>
 					<a href="<?php echo esc_url( $tab3['tab_button']['url'] ); ?>" class="btn btn--secondary-dark"><?php echo esc_html( $tab3['tab_button']['title'] ); ?></a>
 				</div>
+				<?php if ( $tab3['tab_image'] ) { ?>
 				<div class="tabbed--item__image <?php echo $tab3['image_position']; ?>">
 					<img loading="lazy" class="<?php echo $tab3['image_position']; ?>" src="<?php echo esc_url( $tab3['tab_image']['url'] ); ?>" alt="<?php echo esc_attr( $tab3['tab_image']['alt'] ); ?>" />
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
