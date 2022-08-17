@@ -2131,6 +2131,14 @@ body.nav-open {
 .two-col__item h2, .two-col__item h3, .two-col__item h4, .two-col__item h5 {
   padding-right: 2rem;
 }
+.two-col__item ul {
+  list-style: disc;
+  margin-top: 1.5em;
+  padding-left: 1rem;
+}
+.two-col__item li {
+  margin-bottom: 0.25em;
+}
 .two-col__item:first-of-type {
   margin-bottom: 1.5rem;
 }
