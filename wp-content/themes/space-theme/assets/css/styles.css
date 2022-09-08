@@ -2267,6 +2267,7 @@ body.nav-open {
 }
 
 .banner {
+  min-height: calc(100vh + 0px);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2277,6 +2278,11 @@ body.nav-open {
 @media (max-width: 49.99em) {
   .banner {
     background-image: none !important;
+  }
+}
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) {
+  .banner {
+    min-height: calc(100vh + 30px);
   }
 }
 .banner__content {
