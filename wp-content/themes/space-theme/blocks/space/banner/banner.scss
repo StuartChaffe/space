@@ -1,4 +1,5 @@
 .banner {
+	max-width: 1600px;
 	min-height: calc(100vh + 0px);
 	position: relative;
 	background-size: cover;
@@ -7,7 +8,7 @@
 	display: flex;
 	// padding-top: var(--spacing-xxl);
 	overflow: hidden;
-	margin-bottom: var(--spacing);
+	margin: 0 auto var(--spacing) auto;
 	@include mq($until: medium) {
 		background-image: none !important;
 	}

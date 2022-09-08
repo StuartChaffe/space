@@ -2267,13 +2267,14 @@ body.nav-open {
 }
 
 .banner {
+  max-width: 1600px;
   min-height: calc(100vh + 0px);
   position: relative;
   background-size: cover;
   background-position: center center;
   display: flex;
   overflow: hidden;
-  margin-bottom: var(--spacing);
+  margin: 0 auto var(--spacing) auto;
 }
 @media (max-width: 49.99em) {
   .banner {
