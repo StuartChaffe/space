@@ -27,6 +27,8 @@ $overlay 		= get_field('banner_overlay');
 	<div class="vimeo-wrapper">
 		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=0&muted=1&autoplay=1&loop=1&byline=0&title=0&controls=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
+
+	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/729663194?h=ce0b675962&autoplay=1&amp;badge=0&amp;autopause=0&amp;pl…" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SPACE Video Introduction"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <?php } ?>
 
 	<div class="banner__content">
@@ -41,4 +43,3 @@ $overlay 		= get_field('banner_overlay');
 	<?php } ?>
 </section>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/729663194?h=ce0b675962&autoplay=1&amp;badge=0&amp;autopause=0&amp;pl…" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SPACE Video Introduction"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
