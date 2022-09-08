@@ -3,3 +3,8 @@
 		<video id="video-desktop" src="<?php echo $video['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $poster ) { ?><?php echo $poster ?><?php } ?>"></video>
 	</div>
 <?php } ?>
+
+<!-- Using Vimeo iframe for autoplay -->
+	<div class="vimeo-wrapper">
+		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=0&muted=1&autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>

@@ -2268,7 +2268,6 @@ body.nav-open {
 
 .banner {
   max-width: 1600px;
-  min-height: calc(100vh + 0px);
   position: relative;
   background-size: cover;
   background-position: center center;
