@@ -32,7 +32,7 @@ $overlay 		= get_field('banner_overlay');
 	
 	<!-- Using Vimeo iframe for autoplay -->
 	<div class="vimeo-wrapper">
-		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=1&muted=0&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=1&muted=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 <?php } ?>
 
