@@ -1,0 +1,5 @@
+<?php if ( $video && $banner_type == 'Video' ) { ?>
+	<div class="banner--video">
+		<video id="video-desktop" src="<?php echo $video['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $poster ) { ?><?php echo $poster ?><?php } ?>"></video>
+	</div>
+<?php } ?>

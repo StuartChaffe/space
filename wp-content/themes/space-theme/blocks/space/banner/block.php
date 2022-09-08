@@ -21,23 +21,16 @@ $button 		= $content['button'];
 $overlay 		= get_field('banner_overlay');
 ?>
 <section class="banner" <?php if ( $image ) { ?>style="background-image: url('<?php echo $image['large']['url']; ?>')"<?php } ?>>
-<?php if ( $video && $banner_type == 'Video' ) { ?>
-	<div class="banner--video">
-		<video id="video-desktop" src="<?php echo $video['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $poster ) { ?><?php echo $poster ?><?php } ?>"></video>
-	</div>
-<?php } ?>
 
 <?php if ( $vimeovideo && $banner_type == 'Video' ) { ?>
-
-	
 	<!-- Using Vimeo iframe for autoplay -->
 	<div class="vimeo-wrapper">
-		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=1&muted=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe src="https://player.vimeo.com/video/<?php echo $vimeovideo; ?>?background=0&muted=1&autoplay=1&loop=1&byline=0&title=0&controls=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 <?php } ?>
 
 	<div class="banner__content">
-		<?php if ( $title ) { ?><h1><?php echo $title; ?></h1><?php } ?>
+		<?php if ( $title ) { ?><?php echo $title; ?><?php } ?>
 		<?php if ($button) { ?>
 			<a class="btn btn--outline" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a>
 		<?php } ?>
@@ -47,3 +40,5 @@ $overlay 		= get_field('banner_overlay');
 	<?php if ( $image['small'] ) { ?><img loading="lazy" class="banner__image hidedesktop" src="<?php echo $image['small']['url']; ?>" alt="<?php echo $image['small']['alt']; ?>" /><?php } ?>
 	<?php } ?>
 </section>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/729663194?h=ce0b675962&amp;badge=0&amp;autopause=0&amp;pl…" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SPACE Video Introduction"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

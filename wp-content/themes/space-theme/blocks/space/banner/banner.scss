@@ -5,7 +5,7 @@
 	background-position: center center;
 	// background-color: var(--color-grey-dark);
 	display: flex;
-	padding-top: var(--spacing-xxl);
+	// padding-top: var(--spacing-xxl);
 	overflow: hidden;
 	margin-bottom: var(--spacing);
 	@include mq($until: medium) {
@@ -16,11 +16,14 @@
 	}
 
 	&__content {
-		@extend .container;
+		// @extend .container;
+		width: 100%;
+		position: absolute;
 		z-index: 2;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-top: var(--spacing-xxl);
 		h1 {
 			margin-bottom: var(--spacing-s);
 			@include mq(xlarge) {
