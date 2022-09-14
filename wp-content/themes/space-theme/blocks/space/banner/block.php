@@ -25,7 +25,7 @@ $overlay 		= get_field('banner_overlay');
 <?php if ( $vimeovideo && $banner_type == 'Video' ) { ?>
 	
 
-	<div style="padding:56.25% 0 0 0;position:relative;  width: 100%;"><iframe src="https://player.vimeo.com/video/729663194?h=ce0b675962&muted=0&autoplay=0&loop=1&amp;badge=0&amp;autopause=0&amp;pl…" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SPACE Video Introduction"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+	<div style="padding:56.25% 0 0 0;position:relative;  width: 100%;"><iframe src="https://player.vimeo.com/video/729663194?h=ce0b675962&muted=0&autoplay=0&loop=0&amp;badge=0&amp;autopause=0&amp;pl…" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SPACE Video Introduction"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <?php } ?>
 
 	<div class="banner__content">
