@@ -104,6 +104,12 @@ function my_custom_styles( $init_array ) {
 			'block' => 'span',  
 			'classes' => 'btn btn--secondary',
 			'wrapper' => false,
+		), 
+		array(  
+			'title' => 'Green text',  
+			'block' => 'span',  
+			'classes' => 'text--green',
+			'wrapper' => false,
 		),  
 	);  
 	// Insert the array, JSON ENCODED, into 'style_formats'

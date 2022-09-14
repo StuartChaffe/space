@@ -821,6 +821,12 @@ div[data-type="core/button"] div[data-block] {
 .text--white h1, .text--white h2, .text--white h3, .text--white h4, .text--white h5, .text--white h6, .text--white p, .text--white ul li {
   color: white;
 }
+.text--green {
+  color: var(--color-secondary);
+}
+.text--green h1, .text--green h2, .text--green h3, .text--green h4, .text--green h5, .text--green h6, .text--green p, .text--green ul li {
+  color: var(--color-secondary);
+}
 
 .bkg--white {
   background-color: white;

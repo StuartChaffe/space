@@ -39,6 +39,12 @@
 			color: white;
 		}	
 	}
+	&--green {
+		color: var(--color-secondary);
+		h1, h2, h3, h4, h5, h6, p, ul li {
+			color: var(--color-secondary);
+		}
+	}
 }
 
 // Background colours
